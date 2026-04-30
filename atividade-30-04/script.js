@@ -10,7 +10,7 @@ async function buscarIP() {
     if (!ip) return;
 
     try {
-        const res = await fetch(`https://ipinfo.io/${ip}/json`);
+        const res = await fetch(`https://ipinfo.io/${ip}/json?token=1244acad01117a`);
         const data = await res.json();
 
         const linha = document.createElement("tr");
